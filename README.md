@@ -12,7 +12,7 @@ This repository contains a step by step walkthrough of how I created a home SIEM
 - <b>Windows 10</b>
 
 ## Diagram
-![AD](https://github.com/user-attachments/assets/c1cb1529-ec9c-4e74-b166-b79d1d078a18)
+![image](https://github.com/user-attachments/assets/8be59972-ebba-4796-a089-79fd849880e6)
 
 # Walkthrough:
 ## Created Free Azure Account
