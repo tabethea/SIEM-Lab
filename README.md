@@ -3,11 +3,12 @@
 ## Description
 This repository contains a step by step walkthrough of how I created a home SIEM lab in the cloud using Microsoft Azure. In this lab, I utilized Microsoft Azure to set up a virtual machine and purposefully disabled the firewall, transforming the virtual machine into a honeypot designed to attract and analyze potential attackers. I also configured log forwarding to direct the failed attack attempts to a central repository and connected this repository to a Security Information and Event Management (SIEM) system for further analysis and monitoring. Lastly, i created an attack map that allowed me to see where the attacks are coming from. Running this lab has allowed me to gain hands-on experience with Microsoft Azure, honeypot setup, log management, and SIEM integration.
 
-<h2>Utilities Used</h2>
+<h2>Languages and Utilities Used</h2>
 
+- <b>KQL</b> 
 - <b>Microsoft Azure</b> 
 
-<h2>Environments Used </h2>
+<h2>Virtual Environments Used </h2>
 
 - <b>Windows 10</b>
 
@@ -72,7 +73,24 @@ Azure Monitor Windows Agent can be seen inside the Virtual Machine
 
 ![image](https://github.com/user-attachments/assets/db1e7bab-2432-474c-87e8-c33467b2591b)
 
-## View Hack Attempts in the Log Analytics Workspace
+## Viewed the Logs in the Log Analytics Workspace
 Azure Monitor Windows Agent fowards logs to Log Analytics Workspace
 
 ![image](https://github.com/user-attachments/assets/7b8cc0e9-36e7-4653-a26d-8f2dbc0b7a3b)
+
+## Queried the Log Analytics workspace With KQL to show failed attacks against our Honey Pot
+![image](https://github.com/user-attachments/assets/1ad4081a-596f-4908-98af-54b1e1f416cb)
+
+## Imported a [Spreadsheet](https://drive.google.com/file/d/13EfjM_4BohrmaxqXZLB5VUBIz2sv9Siz/view?usp=sharing) from Josh Madakor into Sentinel Watchlist
+This spreadsheet contains geographic information for each block of IP addresses which we can view in Log Analytics. 
+
+![image](https://github.com/user-attachments/assets/bef686f1-f483-45f6-b897-53b6bfe97713)
+
+## Logs now have geographic information
+![image](https://github.com/user-attachments/assets/51bc6b76-bf8e-4af8-9692-43515a5d4cc2)
+
+## Created an Attack Map in Sentinel
+This was done by pasting a [query](https://drive.google.com/file/d/1ErlVEK5cQjpGyOcu4T02xYy7F31dWuir/view?usp=drive_link) from Josh Madakor into a Sentinel workbook
+
+![image](https://github.com/user-attachments/assets/891299fe-e843-4992-8991-f899822b3fd7)
+![image](https://github.com/user-attachments/assets/b09c798f-f40b-43c6-8790-1d951c2aae4e)
