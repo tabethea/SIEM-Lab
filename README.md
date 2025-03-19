@@ -22,7 +22,7 @@ This repository contains a step by step walkthrough of how I created a home SIEM
 ## Created a resource group inside Microsoft Azure
 ![Image](https://github.com/user-attachments/assets/805ee78c-3dee-4d77-a36e-0eccc86c4567)
 
-## Created a virtual netork within the resource group 
+## Created a virtual network within the resource group 
 ![Image](https://github.com/user-attachments/assets/8b8967f0-806c-452d-8657-7ba8249363e4)
 
 ## Created the Honey Pot/Virtual Machine
